@@ -54,7 +54,7 @@
                     Hi, I'm Shaikh Salman and I graduated from the University of Amravati with a degree in Electronics and Telecommunication.
 					My interests are in Front End Engineering, and I love to create beautiful and performant products with delightful user experiences.
                 </p>
-                <button class="c-btn">Download CV</button>
+                <a href="pdf/html5.pdf" class="button_download">download Cv</a>
             </div>
         </div>
     </section>
@@ -147,12 +147,14 @@
                  <img src="images/b3.png">
             </div>
             <div class="contact-right-col">
-                <form>
+                <form action="mail.php" method="post" id="demo5">
                     <h2>Connect with us</h2>
-                    <input type="text" name="" placeholder="Name">
-                    <input type="email" name= "" placeholder="E-mail">
+                    <input type="text" name="name" required placeholder="Name">
+                    <input type="email" name= "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="please enter valid email [test@test.com]." required placeholder="E-mail">
                     <br>
-                    <textarea cols="40" rows="10" placeholder="Message">Write message</textarea>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Phone Number">
+                    <br>
+                    <textarea cols="40" rows="10" name="comment" placeholder=" write Message"></textarea>
                     <br>
                     <button  class="c-btn">Submit</button>
                 </form>
